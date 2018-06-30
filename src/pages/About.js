@@ -1,0 +1,29 @@
+import React, { Component } from 'react'
+
+export default class About extends Component {
+  render() {
+    return (
+        <section id="about" className="section scrollspy">
+          <h3 className="page-title white-text teal">About</h3>
+          <div className="container flow-text">
+            <blockquote>
+              <h2>Mission-driven full stack developer with a passion for thoughtful UI design, collaboration, and teaching.</h2>
+            </blockquote>
+            <p>I’ve always sought out opportunities and challenges that are meaningful to me. Although my professional path has
+              taken many twists and turns — from touring and recording artist, to employee of the year at a non-profit, to dean's
+              scholar at UPenn, to small business owner and entrepreneur — I've never stopped engaging my passion to help others
+              and solve problems.</p>
+            <p>As a web developer, I enjoy using my obsessive attention to detail, my unequivocal love for making things, and my
+              mission-driven work ethic to literally change the world. That's why I’m excited to make a big impact at a high
+              growth company.</p>
+            <p>
+              <strong>Current Focus</strong>:&nbsp;
+              <a aria-label="Navigate to the Inclusive Design Patterns homepage" href="https://www.smashingmagazine.com/inclusive-design-patterns/">Accessibility</a>&nbsp;//&nbsp;
+              <a aria-label="Navigate to the Full Stack React homepage" href="https://www.fullstackreact.com/">React</a>&nbsp;//&nbsp;
+              <a aria-label="Navigate to the article &quot;Scalable CSS&quot;" href="https://mrmrs.github.io/writing/2016/03/24/scalable-css/">Design Systems</a>
+            </p>
+          </div>
+        </section>
+    )
+  }
+}
