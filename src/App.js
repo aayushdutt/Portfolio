@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {BrowserRouter as Router, Route} from 'react-router-dom'
 
 import Navbar from './components/Navbar'
 import Landing from './pages/Landing'
@@ -8,24 +9,23 @@ import Projects from './pages/Projects'
 import Skills from './pages/Skills'
 import Awards from './pages/Awards'
 import Education from './pages/Education'
-// import EverythingElse from './components/EverythingElse'
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Navbar />
-        <main>
-          <Landing />
-          <About />
-          <Experience />
-          <Projects />
-          <Skills />
-          <Awards />
-          <Education />
-        </main>
-        {/* <EverythingElse /> */}
-      </div>
+      <Router>
+        <div className="App">
+          <Navbar />
+            <main>
+              <Route path='/' exact={true}  component={Landing} />
+              <Route path='/about' exact={true}  component={About} />
+              <Route path='/experience' exact={true}  component={Experience} />
+              <Route path='/projects' exact={true}  component={Projects} />
+              <Route path='/skills' exact={true}  component={Skills} />
+              <Route path='/education' exact={true}  component={Education} />
+            </main>
+        </div>
+      </Router>
     );
   }
 }

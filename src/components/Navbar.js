@@ -1,36 +1,37 @@
 import React, { Component } from 'react'
+import {Link} from 'react-router-dom'
 
 export default class Navbar extends Component {
   render() {
     return (
       <div>
         <nav ng-class="hide-on-small-only">
-          <ul class="side-nav fixed section table-of-contents">
-            <li class="logo"><a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro" class="brand-logo teal-text">
-                <h1>Aayush Dutt<span class="brown-text light">Full Stack Developer</span></h1></a></li>
-            <li class="bold"><a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i class="mdi-social-person small"></i><span>About</span></a></li>
-            <li class="bold"><a aria-label="Navigate to the Experience section" href="#experience" class="waves-effect waves-dark cyan-text"><i class="mdi-action-trending-up small"></i><span>Experience</span></a></li>
-            <li class="bold"><a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark indigo-text"><i class="mdi-av-web small"></i><span>Projects</span></a></li>
-            <li class="bold"><a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark purple-text"><i class="mdi-av-equalizer small"></i><span>Skills</span></a></li>
-            <li class="bold"><a aria-label="Navigate to the Awards section" href="#awards" class="waves-effect waves-dark red-text"><i class="mdi-action-grade small"></i><span>Awards</span></a></li>
-            <li class="bold"><a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark orange-text"><i class="mdi-social-school small"></i><span>Education</span></a></li>
-            <li class="bold"><a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark brown-text"><i class="mdi-content-mail small"></i><span>Contact</span></a></li>
-            <li class="bold"><a aria-label="Open Andrew's resume in a new tab" href="https://docs.google.com/document/d/1evlvmAcOmPTttl1isyX_UcQbLO5pK8OwB4Rs2Sv4riY" target="_blank" class="waves-effect waves-dark grey-text text-darken-3"><i class="mdi-action-description small"></i><span>Resume</span></a></li>
+          <ul className="side-nav fixed section table-of-contents">
+            <li className="logo"><Link id="logo-container" aria-label="Navigate to the beginning of the page" to="/" className="brand-logo teal-text">
+                <h1>Aayush Dutt<span className="brown-text light">Full Stack Developer</span></h1></Link></li>
+            <li className="bold"><Link aria-label="Navigate to the About section" to="/about" className="waves-effect waves-dark teal-text"><i className="mdi-social-person small" /><span>About</span></Link></li>
+            <li className="bold"><Link aria-label="Navigate to the Experience section" to="/experience" className="waves-effect waves-dark cyan-text"><i className="mdi-action-trending-up small" /><span>Experience</span></Link></li>
+            <li className="bold"><Link aria-label="Navigate to the Projects section" to="/projects" className="waves-effect waves-dark indigo-text"><i className="mdi-av-web small" /><span>Projects</span></Link></li>
+            <li className="bold"><Link aria-label="Navigate to the Skills section" to="/skills" className="waves-effect waves-dark purple-text"><i className="mdi-av-equalizer small" /><span>Skills</span></Link></li>
+            <li className="bold"><Link aria-label="Navigate to the Awards section" to="/awards" className="waves-effect waves-dark red-text"><i className="mdi-action-grade small" /><span>Awards</span></Link></li>
+            <li className="bold"><Link aria-label="Navigate to the Education section" to="/education" className="waves-effect waves-dark orange-text"><i className="mdi-social-school small" /><span>Education</span></Link></li>
+            <li className="bold"><Link aria-label="Navigate to the Contact section" to="/contact" className="waves-effect waves-dark brown-text"><i className="mdi-content-mail small" /><span>Contact</span></Link></li>
+            <li className="bold"><a aria-label="Open Andrew's resume in a new tab" href="https://docs.google.com/document/d/1evlvmAcOmPTttl1isyX_UcQbLO5pK8OwB4Rs2Sv4riY" target="_blank" className="waves-effect waves-dark grey-text text-darken-3"><i className="mdi-action-description small" /><span>Resume</span></a></li>
           </ul>
         </nav>
-        <nav class="hide-on-large only trigger z-depth-1"><a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-          <div class="name-title"><a id="name" aria-label="Navigate to the beginning of the page" href="#main" class="teal-text">Andrew Borstein</a><span class="brown-text light">Full Stack Developer</span></div>
+        <nav className="hide-on-large only trigger z-depth-1"><a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out" className="button-collapse"><i className="mdi-navigation-menu" /></a>
+          <div className="name-title"><Link id="name" aria-label="Navigate to the beginning of the page" to="/" className="teal-text">Andrew Borstein</Link><span className="brown-text light">Full Stack Developer</span></div>
         </nav>
-        <nav class="hide-on-large only">
-          <ul id="slide-out" class="side-nav">
-            <li class="bold"><a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i class="mdi-social-person small"></i><span>About</span></a></li>
-            <li class="bold"><a aria-label="Navigate to the Experience section" href="#experience" class="waves-effect waves-dark cyan-text"><i class="mdi-action-trending-up small"></i><span>Experience</span></a></li>
-            <li class="bold"><a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark indigo-text"><i class="mdi-av-web small"></i><span>Projects</span></a></li>
-            <li class="bold"><a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark purple-text"><i class="mdi-av-equalizer small"></i><span>Skills</span></a></li>
-            <li class="bold"><a aria-label="Navigate to the Awards section" href="#awards" class="waves-effect waves-dark red-text"><i class="mdi-action-grade small"></i><span>Awards</span></a></li>
-            <li class="bold"><a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark orange-text"><i class="mdi-social-school small"></i><span>Education</span></a></li>
-            <li class="bold"><a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark brown-text"><i class="mdi-content-mail small"></i><span>Contact</span></a></li>
-            <li class="bold"><a aria-label="Open Andrew's Resume in a new tab" href="https://docs.google.com/document/d/1evlvmAcOmPTttl1isyX_UcQbLO5pK8OwB4Rs2Sv4riY" target="_blank" class="waves-effect waves-dark grey-text text-darken-3"><i class="mdi-action-description small"></i><span>Resume</span></a></li>
+        <nav className="hide-on-large only">
+          <ul id="slide-out" className="side-nav">
+            <li className="bold"><Link aria-label="Navigate to the About section" to="/about" className="waves-effect waves-dark teal-text"><i className="mdi-social-person small" /><span>About</span></Link></li>
+            <li className="bold"><Link aria-label="Navigate to the Experience section" to="/experience" className="waves-effect waves-dark cyan-text"><i className="mdi-action-trending-up small" /><span>Experience</span></Link></li>
+            <li className="bold"><Link aria-label="Navigate to the Projects section" to="/projects" className="waves-effect waves-dark indigo-text"><i className="mdi-av-web small" /><span>Projects</span></Link></li>
+            <li className="bold"><Link aria-label="Navigate to the Skills section" to="/skills" className="waves-effect waves-dark purple-text"><i className="mdi-av-equalizer small" /><span>Skills</span></Link></li>
+            <li className="bold"><Link aria-label="Navigate to the Awards section" to="/awards" className="waves-effect waves-dark red-text"><i className="mdi-action-grade small" /><span>Awards</span></Link></li>
+            <li className="bold"><Link aria-label="Navigate to the Education section" to="/education" className="waves-effect waves-dark orange-text"><i className="mdi-social-school small" /><span>Education</span></Link></li>
+            <li className="bold"><Link aria-label="Navigate to the Contact section" to="/contact" className="waves-effect waves-dark brown-text"><i className="mdi-content-mail small" /><span>Contact</span></Link></li>
+            <li className="bold"><a aria-label="Open Andrew's Resume in a new tab" href="https://docs.google.com/document/d/1evlvmAcOmPTttl1isyX_UcQbLO5pK8OwB4Rs2Sv4riY" target="_blank" className="waves-effect waves-dark grey-text text-darken-3"><i className="mdi-action-description small" /><span>Resume</span></a></li>
           </ul>
         </nav>
       </div>
