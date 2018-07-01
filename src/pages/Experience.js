@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import ExperienceItem from '../components/ExperienceItem'
-import ExperienceContents from '../Content/ExperienceData.js'
+import ExperienceContents from '../Content/ExperienceData'
 
 export default class Experience extends Component {
   

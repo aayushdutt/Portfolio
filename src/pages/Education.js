@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import EducationItem from '../components/EducationItem';
-import EducationContents from '../Content/EducationData.js'
+import EducationContents from '../Content/EducationData'
 
 export default class Education extends Component {
   
