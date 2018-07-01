@@ -18,8 +18,8 @@ export default class About extends Component {
               growth company.</p>
             <p>
               <strong>Current Focus</strong>:&nbsp;
-              <a aria-label="Navigate to the Inclusive Design Patterns homepage" href="https://www.smashingmagazine.com/inclusive-design-patterns/">Accessibility</a>&nbsp;//&nbsp;
-              <a aria-label="Navigate to the Full Stack React homepage" href="https://www.fullstackreact.com/">React</a>&nbsp;//&nbsp;
+              <a aria-label="Navigate to the Inclusive Design Patterns homepage" href="https://www.smashingmagazine.com/inclusive-design-patterns/">Accessibility</a>&nbsp; &nbsp;
+              <a aria-label="Navigate to the Full Stack React homepage" href="https://www.fullstackreact.com/">React</a>&nbsp; &nbsp;
               <a aria-label="Navigate to the article &quot;Scalable CSS&quot;" href="https://mrmrs.github.io/writing/2016/03/24/scalable-css/">Design Systems</a>
             </p>
           </div>

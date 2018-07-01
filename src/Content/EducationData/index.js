@@ -1,4 +1,3 @@
-import a from './GeorgeWashingtonUniversity'
-import b from './UniversityofPensyllvania'
+import a from './IITDhanbad'
 
-export default [b, a]
+export default [a]

@@ -2,6 +2,9 @@ body {
 	color: #333;
 	font-size: 16px;
 }
+.mainImage {
+	width: 100%;
+}
 a {
 	color: #009688;
 }
@@ -295,6 +298,12 @@ small { display: none;}
 	}
 }
 @media (max-width: 992px) {
+	.mainImage {
+		width: auto;
+		height: 100%;
+		left: -63px;
+		position: relative;
+	}
 	main {
 		padding-left: 0px;
 		padding-top: 64px;
@@ -350,11 +359,6 @@ small { display: none;}
     display: block;
     font-size: 14px;
 	}
-	h3,
-	.container {
-    position: relative;
-    top: 64px;
-	}
 	section#intro {
 	    margin-bottom: -64px;
 	}
@@ -383,10 +387,6 @@ small { display: none;}
 	}
 	#experience span.card-title a {
 	   margin: 0;
-	}
-	i.mdi-navigation-close.right {
-	  position: relative;
-	  bottom: 35px;
 	}
 	#contact a:not(.btn-floating) {
     text-align: center;
