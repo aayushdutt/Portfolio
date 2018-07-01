@@ -7,7 +7,7 @@ import About from './pages/About'
 import Experience from './pages/Experience'
 import Projects from './pages/Projects'
 import Skills from './pages/Skills'
-import Awards from './pages/Awards'
+// import Awards from './pages/Awards'
 import Education from './pages/Education'
 
 class App extends Component {
