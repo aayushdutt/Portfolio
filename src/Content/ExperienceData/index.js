@@ -1,5 +1,4 @@
-import a from './Wespire'
-import b from './IntroCourse'
+import a from './CyberLabs'
 
 
-export default [a, b]
+export default [a]

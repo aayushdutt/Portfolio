@@ -15,14 +15,14 @@ export default class ExperienceItem extends Component {
               <div className="card-content">
                 <div className="row">
                   <div className="col s12 m2">
-                    <a href="http://wespire.com" target="_blank">
-                      <img alt="WeSpire logo" src="static/img/wespire-logo.jpg" className="responsive-img center-block" />
+                    <a href={ExperienceContent.link} target="_blank">
+                      <img alt="WeSpire logo" src={"static/img/experience/" + ExperienceContent.logo} className="responsive-img center-block" />
                     </a>
                   </div>
                   <div className="col s12 m10">
                     <p>
                       <span className="card-title">
-                        <a href="http://wespire.com" target="_blank" className="teal-text hoverline">{ExperienceContent.company}</a>
+                        <a href={ExperienceContent.link} target="_blank" className="teal-text hoverline">{ExperienceContent.company}</a>
                       </span>
                     </p>
                   </div>

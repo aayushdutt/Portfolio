@@ -12,7 +12,12 @@ export default class ProjectItem extends Component {
           <div className="col s12 m6 l4">
             <div className="card medium">
               <div className="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of BlogSpire web app" src="static/img/blogspire.jpg" className="activator" />
+                {
+                  ProjectContent.image ? 
+                  <img alt="Screenshot of BlogSpire web app" src={"static/img/projects/"+ProjectContent.image} className="activator" />
+                  :
+                  <img alt="Screenshot of BlogSpire web app" src="static/img/projects/fallback.jpg" className="activator" />
+                }
               </div>
               <div className="card-content">
                 <span className="card-title activator teal-text hoverline">{ProjectContent.name}
@@ -28,9 +33,15 @@ export default class ProjectItem extends Component {
                   {Accomplishments}
                 </ul>
                 <div className="card-action">
-                  <a aria-label="Visit Code Island website" href={ProjectContent.liveLink} target="_blank" data-position="top" data-tooltip="View Online" className="btn-floating btn-large waves-effect waves-light brown tooltipped">
-                    <i className="fa fa-external-link" />
-                  </a>
+                  {
+                    ProjectContent.liveLink ? 
+                    <a aria-label="Visit Code Island website" href={ProjectContent.liveLink} target="_blank" data-position="top" data-tooltip="View Online" className="btn-floating btn-large waves-effect waves-light brown tooltipped">
+                      <i className="fa fa-external-link" />
+                    </a>
+                    :
+                    null
+                  }
+                  
                   <a aria-label="Visit the GitHub repo for Code Island project" href={ProjectContent.githubLink} target="_blank" data-position="top" data-tooltip="View Source" className="btn-floating btn-large waves-effect waves-light brown tooltipped">
                     <i className="fa fa-github" />
                   </a>

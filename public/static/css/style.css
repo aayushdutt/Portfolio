@@ -374,6 +374,9 @@ small { display: none;}
 	  line-height: 200%;
 	  margin: 30px 0 0;
 	}
+	#intro h2 {
+		font-size:45px;
+	}
 	#intro.section .container *:not(span) {
 		padding: 0;
 	}
