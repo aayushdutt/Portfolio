@@ -31,14 +31,29 @@ export default class ExperienceItem extends Component {
                 <p>
                   <em className="grey-text">{ExperienceContent.about}</em>
                 </p>
-                <h6>Develop Product</h6>
-                <ul>
-                  {Developments}
-                </ul>
-                <h6>Accomplishments</h6>
-                <ul>
-                  {Accomplishments}
-                </ul>
+                {
+                  Developments.length ?
+                  (<div>
+                    <h6>Develop Product</h6>
+                    <ul>
+                      {Developments}
+                    </ul>
+                  </div>)
+                  :
+                  null
+                }
+                {
+                  Accomplishments.length ?
+                  <div>
+                    <h6>Accomplishments</h6>
+                    <ul>
+                      {Accomplishments}
+                    </ul>
+                  </div>
+                  :
+                  null
+                }
+                
               </div>
               <div className="card-action">
                 <span>{ExperienceContent.duration} | {ExperienceContent.place}</span>
