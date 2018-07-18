@@ -9,6 +9,7 @@ import Projects from './pages/Projects'
 import Skills from './pages/Skills'
 // import Awards from './pages/Awards'
 import Education from './pages/Education'
+import Contact from './pages/Contact';
 
 class App extends Component {
   render() {
@@ -18,7 +19,8 @@ class App extends Component {
           <Navbar />
             <main>
               <Route path='/' exact={true}  component={Landing} />
-              <Route path='/about' exact={true}  component={About} />
+              {/* <Route path='/about' exact={true}  component={About} /> */}
+              <Route path='/contact' exact={true}  component={Contact} />
               <Route path='/experience' exact={true}  component={Experience} />
               <Route path='/projects' exact={true}  component={Projects} />
               <Route path='/skills' exact={true}  component={Skills} />
