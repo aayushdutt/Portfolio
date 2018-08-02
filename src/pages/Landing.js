@@ -5,7 +5,6 @@ export default class Landing extends Component {
   mainImage = mobile() ? <img alt="Aayush Dutt" className="mainImage" src="static/img/mainImage/6.jpg"/>
                         : <img alt="Aayush Dutt" className="mainImage" src="static/img/mainImage/5.jpg"/> 
   render() {
-    console.log(mobile())
     return (
         <section id="intro" className="section scrollspy full-height">
           <div className="overlay">
