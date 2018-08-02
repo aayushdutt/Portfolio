@@ -299,10 +299,9 @@ small { display: none;}
 }
 @media (max-width: 992px) {
 	.mainImage {
-		width: auto;
+		width: 100%;
 		height: 100%;
 		left: -63px;
-		position: relative;
 	}
 	main {
 		padding-left: 0px;
