@@ -58,7 +58,7 @@ export default class Skills extends Component {
 
         <div className="card">
           <div className="card-content">
-            <h4 className="brown-text light">Back-End</h4>
+            <h4 className="brown-text light">Database</h4>
             <div className="row text-center">
               {backendSkills}
             </div>
