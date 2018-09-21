@@ -16,7 +16,7 @@ export default class ExperienceItem extends Component {
                 <div className="row">
                   <div className="col s12 m2">
                     <a href={ExperienceContent.link} target="_blank">
-                      <img alt="WeSpire logo" src={"static/img/experience/" + ExperienceContent.logo} className="responsive-img center-block" />
+                      <img alt={ExperienceContent.alt} src={"static/img/experience/" + ExperienceContent.logo} className="responsive-img center-block" />
                     </a>
                   </div>
                   <div className="col s12 m10">

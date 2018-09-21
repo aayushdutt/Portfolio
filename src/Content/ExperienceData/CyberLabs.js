@@ -1,6 +1,7 @@
 export default {
   company: "Cyber Labs",
   logo: "cyberlabs.jpg",
+  alt: "CyberLabs Logo",
   link: "http://www.cyberlabs.club/",
   role: "Full Stack Developer",
   about: "Cyber Labs is the official Cyber Society of IIT (ISM), Dhanbad.",
