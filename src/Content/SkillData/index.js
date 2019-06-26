@@ -21,10 +21,6 @@ export default {
   ],
   html: [
     { name: "HTML5", image: "html5.png" },
-    { name: "JSX", image: "react.png" },
-    { name: "Jade", image: "jade.png" },
-    { name: "EJS", image: "ejs.png" },
-    { name: "Handlebars", image: "handlebars.png" }
   ],
   css: [
     { name: "CSS3", image: "css3.png" },
@@ -35,7 +31,6 @@ export default {
     { name: "Python", image: "python.png" },
     { name: "C++", image: "cpp.png" },
     { name: "GitHub", image: "github.png" },
-    { name: "Heroku", image: "heroku.png" },
     { name: "Gulp", image: "gulp.png" }
   ]
 };

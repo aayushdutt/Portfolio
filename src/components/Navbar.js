@@ -62,19 +62,19 @@ export default class Navbar extends Component {
             </li>
             {/* <li className="bold"><Link aria-label="Navigate to the About section" to="/about" className="waves-effect waves-dark teal-text"><i className="mdi-social-person small" /><span>About</span></Link></li> */}
             <li className="bold">
-              <Link
+              <a
                 aria-label="Navigate to the Contact section"
-                to="/contact"
+                href="https://aayushdutt.com"
                 className="waves-effect waves-dark brown-text"
               >
                 <i className="mdi-content-mail small" />
                 <span>Contact</span>
-              </Link>
+              </a>
             </li>
             <li className="bold">
               <a
-                aria-label="Open Andrew's resume in a new tab"
-                href="#"
+                aria-label="Open Aayush's resume in a new tab"
+                href="https://aayushdutt.com/resume.pdf"
                 className="waves-effect waves-dark grey-text text-darken-3"
               >
                 <i className="mdi-action-description small" />
@@ -159,8 +159,8 @@ export default class Navbar extends Component {
             </li>
             <li className="bold">
               <a
-                aria-label="Open Andrew's Resume in a new tab"
-                href="#"
+                aria-label="Open Aayush's Resume in a new tab"
+                href="https://aayushdutt.com/resume.pdf"
                 className="waves-effect waves-dark grey-text text-darken-3"
               >
                 <i className="mdi-action-description small" />

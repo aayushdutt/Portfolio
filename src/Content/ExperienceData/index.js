@@ -1,4 +1,5 @@
 import a from './CyberLabs'
+import b from './GSoC19'
 
 
-export default [a]
+export default [b, a]
