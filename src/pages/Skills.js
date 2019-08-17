@@ -1,108 +1,97 @@
-import React, { Component } from 'react'
-import SkillData from '../Content/SkillData'
+import React, { Component } from "react";
+import SkillData from "../Content/SkillData";
 
 export default class Skills extends Component {
   render() {
-    
-        const javascriptSkills = SkillData.javascript.map(javascriptSkill => {
-          return (
-            <div key={javascriptSkill.name} className="col s6 m2">
-            <img alt={javascriptSkill.name} src={"static/img/skills/" + javascriptSkill.image} className="responsive-img" />{javascriptSkill.name}</div>
-          )
-        })
-        const backendSkills = SkillData.backend.map(backendSkill => {
-          return (
-            <div key={backendSkill.name} className="col s6 m2">
-            <img alt={backendSkill.name} src={"static/img/skills/" + backendSkill.image} className="responsive-img" />{backendSkill.name}</div>
-          )
-        })
-        const cmsSkills = SkillData.cms.map(cmsSkill => {
-          return (
-            <div key={cmsSkill.name} className="col s6 m2">
-            <img alt={cmsSkill.name} src={"static/img/skills/" + cmsSkill.image} className="responsive-img" />{cmsSkill.name}</div>
-          )
-        })
-        const htmlSkills = SkillData.html.map(htmlSkill => {
-          return (
-            <div key={htmlSkill.name} className="col s6 m2">
-            <img alt={htmlSkill.name} src={"static/img/skills/" + htmlSkill.image} className="responsive-img" />{htmlSkill.name}</div>
-          )
-        })
-        const cssSkills = SkillData.css.map(cssSkill => {
-          return (
-            <div key={cssSkill.name} className="col s6 m2">
-            <img alt={cssSkill.name} src={"static/img/skills/" + cssSkill.image} className="responsive-img" />{cssSkill.name}</div>
-          )
-        })
-        const otherSkills = SkillData.other.map(otherSkill => {
-          return (
-            <div key={otherSkill.name} className="col s6 m2">
-            <img alt={otherSkill.name} src={"static/img/skills/" + otherSkill.image} className="responsive-img" />{otherSkill.name}</div>
-          )
-        })
-    
+    const programmingLanguages = SkillData.programmingLanguages.map(
+      programmingLanguage => {
+        return (
+          <div key={programmingLanguage.name} className="skill col s6 m2">
+            <img
+              alt={programmingLanguage.name}
+              src={"static/img/skills/" + programmingLanguage.image}
+              className="responsive-img"
+            />
+            {programmingLanguage.name}
+          </div>
+        );
+      }
+    );
 
-  return (
+    const webDevelopmentSkills = SkillData.webDevelopment.map(
+      webDevelopmentSkill => {
+        return (
+          <div key={webDevelopmentSkill.name} className="skill col s6 m2">
+            <img
+              alt={webDevelopmentSkill.name}
+              src={"static/img/skills/" + webDevelopmentSkill.image}
+              className="responsive-img"
+            />
+            {webDevelopmentSkill.name}
+          </div>
+        );
+      }
+    );
+
+    const databases = SkillData.databases.map(database => {
+      return (
+        <div key={database.name} className="skill col s6 m2">
+          <img
+            alt={database.name}
+            src={"static/img/skills/" + database.image}
+            className="responsive-img"
+          />
+          {database.name}
+        </div>
+      );
+    });
+
+    const otherSkills = SkillData.otherSkills.map(otherSkill => {
+      return (
+        <div key={otherSkill.name} className="skill col s6 m2 mb-2">
+          <img
+            alt={otherSkill.name}
+            src={"static/img/skills/" + otherSkill.image}
+            className="responsive-img"
+          />
+          {otherSkill.name}
+        </div>
+      );
+    });
+
+    return (
       <section id="skills" className="section scrollspy">
         <h3 className="page-title white-text teal">Skills</h3>
         <div className="container">
+          <div className="card">
+            <div className="card-content">
+              <h4 className="brown-text light">Programming Languages</h4>
+              <div className="row text-center">{programmingLanguages}</div>
+            </div>
+          </div>
 
-        <div className="card">
-          <div className="card-content">
-            <h4 className="brown-text light">Javascript</h4>
-            <div className="row text-center">
-              {javascriptSkills}
+          <div className="card">
+            <div className="card-content">
+              <h4 className="brown-text light">Databases</h4>
+              <div className="row text-center">{databases}</div>
+            </div>
+          </div>
+
+          <div className="card">
+            <div className="card-content">
+              <h4 className="brown-text light">Web Development</h4>
+              <div className="row text-center">{webDevelopmentSkills}</div>
+            </div>
+          </div>
+
+          <div className="card">
+            <div className="card-content">
+              <h4 className="brown-text light">Other</h4>
+              <div className="row text-center">{otherSkills}</div>
             </div>
           </div>
         </div>
-
-        <div className="card">
-          <div className="card-content">
-            <h4 className="brown-text light">Database</h4>
-            <div className="row text-center">
-              {backendSkills}
-            </div>
-          </div>
-        </div>
-
-        <div className="card">
-          <div className="card-content">
-            <h4 className="brown-text light">CMS</h4>
-            <div className="row text-center">
-              {cmsSkills}
-            </div>
-          </div>
-        </div>
-
-        <div className="card">
-          <div className="card-content">
-            <h4 className="brown-text light">HTML</h4>
-            <div className="row text-center">
-              {htmlSkills}
-            </div>
-          </div>
-        </div>
-
-        <div className="card">
-          <div className="card-content">
-            <h4 className="brown-text light">CSS</h4>
-            <div className="row text-center">
-              {cssSkills}
-            </div>
-          </div>
-        </div>
-        
-        <div className="card">
-          <div className="card-content">
-            <h4 className="brown-text light">Other</h4>
-            <div className="row text-center">
-              {otherSkills}
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-    )
+      </section>
+    );
   }
 }

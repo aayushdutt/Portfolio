@@ -60,7 +60,6 @@ export default class Navbar extends Component {
                 <span>Experience</span>
               </Link>
             </li>
-            {/* <li className="bold"><Link aria-label="Navigate to the About section" to="/about" className="waves-effect waves-dark teal-text"><i className="mdi-social-person small" /><span>About</span></Link></li> */}
             <li className="bold">
               <a
                 aria-label="Navigate to the Contact section"
@@ -73,6 +72,7 @@ export default class Navbar extends Component {
             </li>
             <li className="bold">
               <a
+                target="_blank"
                 aria-label="Open Aayush's resume in a new tab"
                 href="https://aayushdutt.com/resume.pdf"
                 className="waves-effect waves-dark grey-text text-darken-3"
@@ -146,7 +146,6 @@ export default class Navbar extends Component {
                 <span>Experience</span>
               </Link>
             </li>
-            {/* <li className="bold"><Link aria-label="Navigate to the About section" to="/about" className="waves-effect waves-dark teal-text"><i className="mdi-social-person small" /><span>About</span></Link></li> */}
             <li className="bold">
               <Link
                 aria-label="Navigate to the Contact section"
